@@ -1055,6 +1055,7 @@ class Account(BaseObject):
             await copy.connect()
             await copy.get_me()
             userId = copy.UserId
+            await copy.disconnect()
             
         newAccount = None
 
